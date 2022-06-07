@@ -24,7 +24,7 @@ const Container = styled.div`
   width: 100%;
   min-height: calc(100vh - 30px);
   height: 100%;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   display: flex;
   justify-content: center;
   padding-top: 30px;

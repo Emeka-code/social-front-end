@@ -1,13 +1,17 @@
 import React from "react";
 import Header from "../Header/Header";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "../HomeScreen/HomeScreen";
+import DetailScreen from "../Profile/DetailScreen";
 
 const Home = () => {
   return (
     <BrowserRouter>
       <Header />
-      <HomeScreen />
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/DetailScreen" element={<DetailScreen />} />
+      </Routes>
     </BrowserRouter>
   );
 };
